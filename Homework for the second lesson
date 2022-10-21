@@ -1,0 +1,55 @@
+mport java.util.Scanner;
+
+public class Main {
+        public static void main(String[] args) {
+// Task1
+            System.out.println("Aliaksei Duhanau, QA engineer");
+// Task2
+            byte byteType = 1;
+            short shortType = 1000;
+            int intType = 11111111;
+            long longType = 1111111431;
+            float floatType = 1.11f;
+            double doubleType = 99.9952525;
+            boolean booleanType = true;
+            char charType = 'd';
+
+            System.out.println(' ');
+            System.out.println(byteType);
+            System.out.println(shortType);
+            System.out.println(intType);
+            System.out.println(longType);
+            System.out.println(floatType);
+            System.out.println(doubleType);
+            System.out.println(booleanType);
+            System.out.println(charType);
+//Task3
+            //ввод первой строки
+            Scanner scanner = new Scanner(System.in);
+            String myString1= scanner.nextLine();
+            System.out.println(myString1); // вывод 1ой строки
+
+            //ввод второй строки
+            Scanner scanner2 = new Scanner(System.in);
+            String myString2= scanner2.nextLine();
+            System.out.println(myString2); //вывод 2ой строки
+
+            //суммирвание строк
+            String sumOfTwoStrings=myString1+myString2;
+            System.out.println(sumOfTwoStrings);// вывод суммы строк
+
+            //возвращение длины первой строки
+            System.out.println(myString1.length());
+
+            //возвращает true, если строка пустая, false - если нет
+            System.out.println(myString1.isEmpty());
+
+            //возвращает символ строки по индексу
+            System.out.println(myString1.charAt(3));
+
+            //Возвраûает true, если строки одинаковý, false - если нет
+            boolean areEqual = myString1.equalsIgnoreCase(myString2);
+            System.out.println(areEqual);
+
+        }
+    }
